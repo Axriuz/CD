@@ -1,0 +1,90 @@
+<html>
+		 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<header>
+		<center>Tecnológico Nacional de México
+		<br>
+		INSTITUTO TECNOLÓGICO DE CD. GUZMÁN
+		<hr height: 10px; > 
+		</center>
+	</header>
+
+<?php
+header('Content-Type: text/html; charset=UTF-8');  
+session_start();
+
+if(!isset($_SESSION['usuario'])) 
+{
+  header('Location: /index.html'); 
+  exit();
+}
+$usuario =$_SESSION['usuario'];
+?>
+<CENTER>
+<h2> VIDEOS DE TUTORIALES</h2>
+</CENTER>
+<BR> 
+<table width='100%' border='5' cellpadding=8 CELLSPACING=8  bordercolor='#D149F6';>
+<tr>
+<td>
+<CENTER>
+ 
+
+<h2>INICIAR SESION ()</h2> 
+
+
+"Este modulo permite ubicar la pagina del sistema web, aparte de poder ingresar al sistema"
+<br>
+
+ </CENTER>
+</td>
+
+<td>
+<CENTER>
+
+<video src="../videos/InciarSesion.mp4"></video> 
+</CENTER>
+</td>
+
+</tr>
+<tr>
+<td>
+<CENTER>
+
+
+<h2>CAMBIAR DATOS PERSONALES Y CONTRASEÑA ()</h2> 
+
+"En este modulo se pueden actualizar los datos de todos los maestros al igual que la contraseña"
+<br>
+
+ </CENTER>
+</td>
+
+<td>
+<CENTER>
+<video src="../videos/InciarSesion.mp4"></video> 
+</CENTER>
+
+
+</td>
+<tr>
+</table>
+
+
+<br>
+<br>
+	<a href="Menu.php"><IMG SRC="../Img/menu.png" WIDTH=150 HEIGHT=45>	 </a>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

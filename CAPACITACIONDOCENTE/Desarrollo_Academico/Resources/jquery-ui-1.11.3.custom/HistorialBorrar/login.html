@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>effect demo</title>
+
+<link rel="stylesheet" href="jquery-ui.min.css">
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<style>
+.header{
+
+margin-top: 10px;
+
+
+background: rgba(255,255,255,1);
+/* Old Browsers */background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* FF3.6+ */background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+/* Chrome, Safari4+ */background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* Opera 11.10+ */background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* IE 10+ */background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+/* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+/* IE6-9 */
+
+
+}
+
+.footer{
+
+padding-right:20px;
+
+
+
+background: rgba(255,255,255,1);
+/* Old Browsers */background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* FF3.6+ */background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+/* Chrome, Safari4+ */background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* Opera 11.10+ */background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+ /* IE 10+ */background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+/* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+/* IE6-9 */
+
+}
+
+
+.header{
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 10px;
+   
+   
+}
+
+
+</style>
+
+</head>
+<body>
+ 
+
+<!--
+<div class="container">
+  <div class = "header">
+    <img src="logo.png" class="img-responsive" alt="Responsive image" class="img-rounded">
+
+    <h1>Cambridge Institute Training Center</h1>
+  </div>
+</div>
+  -->
+
+ 
+
+  <div class="container">  
+
+    <div class = "header">
+
+    <div class="row">
+
+     
+        
+        <div class="col-md-2"><img src="logo.png" class="img-responsive" alt="Responsive image" class="img-rounded"></div>
+<!--
+Strong
+#000080
+Soft 
+#483D8B
+#4B0082 
+-->
+
+        <div class="col-md-10"><h2 style="color:#483D8B"><strong>Cambridge International Training Center<Strong></h2></div>
+      
+
+
+      </div>
+    </div>
+ <div>
+
+ <div class="container">
+        <p><br/></p>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="page-header">
+                <center><h3>Login</h3></center>
+            </div>
+            <form role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="username" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-star"></span></span>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                </div>
+                <hr/>
+
+ 
+  
+                    <div class="row">
+
+                       <div class="col-xs-6">
+                              <button type="button" class="btn btn-success btn-sm btn-block"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
+                      </div>
+
+                         <div class="col-xs-6">                
+                            <button type="submit" class="btn btn-primary btn-sm btn-block"><span class="glyphicon glyphicon-lock"></span> Login</button>
+                      </div>
+
+                    </div>
+ 
+
+
+                <p><br/></p>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+<br><br><br>
+
+<div class="container">  
+    <div class = "footer">
+    <div class="row">
+     
+  
+
+      <address>
+
+  <p align = "right">
+    <strong >Twitter, Inc.</strong><br>
+    Address<br>
+    Address<br>
+    <abbr title="Phone">P:</abbr> PhoneNumber
+  </p>
+
+  </address>
+ 
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$( document ).click(function() {
+ /* $("div").effect( "slide", 500 );*/
+
+
+});
+</script>
+ 
+  <!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ --> 
+
+</body>
+</html>

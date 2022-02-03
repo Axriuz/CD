@@ -1,0 +1,521 @@
+/*	Eliminar estilos por defecto de Navegadores
+ * ***************************************************/
+@import url(reset.css);
+/* TIPO DE LETRA */
+@charset "utf-8";
+
+@font-face {    font-family: 'Soberana Titular';  
+			src: url('../fonts/SoberanaTitular-Regular.ttf') format('truetype');			
+			/*src: url('../fonts/Extra Sales.ttf') format('truetype');*/
+			/* src: url(../fonts/SoberanaTitular-Regular.otf).format("opentype");*/
+			 /*font-weight: normal;*/
+		 }
+@font-face {    font-family: 'Soberana Titular Bold';
+			src: url('../fonts/SoberanaTitular-Regular. eot');
+			 src: url('../fonts/SoberanaTitular-Bold.otf') .format("opentype");
+			 font-weight: normal; }
+@font-face {   font-family:'Soberana Sans'; 
+     /* Para Internet Explorer */
+     src: url ('../ fonts / SoberanaSans-Regular.eot');
+     /*Â Â Para el resto de navegadores */
+     src: url ('../fonts/ SoberanaSans-Regular.otf') format("opentype");
+     font-weight: normal; font-style: normal;}
+@font-face {    font-family: 'Soberana Sans Italic'; 
+			 src: url('../fonts/SoberanaSans-Italic.eot');
+			 src: url('../fonts/SoberanaSans-Italic.otf') .format("opentype");
+			 font-weight: normal; }
+@font-face {    font-family: 'Soberana Sans Bold';
+			 src: url('../fonts/SoberanaSans-Bold.eot');
+			 src: url('../fonts/SoberanaSans-Bold.otf') .format("opentype");
+			 font-weight: normal; }
+
+/* ************ */
+body {
+	background: #fafafa;
+   color: #000;
+   font: 1em "Soberana Sans", Calibri, sans-serif;
+}
+
+a {
+	text-decoration:none;
+	color:#000; /*azul fuerte 004569*/
+}
+
+a:hover {
+	color:#A5273F;  /*rojo f02424*/
+}
+
+h1 {
+	font: 1em "Soberana Titular", Bold, sans-serif;
+	font-size:18px;
+	color:#A5273F; /*Encabezado ITCG*/
+}
+
+
+h3 {
+	font: 1em "Soberana Titular", Bold, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+
+h5 {
+	font-size:12px;
+	color:#000;
+}
+
+strong {
+	font-weight:bold;
+}
+
+/*	Contenedor Principal
+ * ******************************/
+#contenedor {
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+	background-color:#FAFAFA; /*azul bajito e5f0f8*/
+}
+
+/*	Contenedor Cabecera
+ * ******************************/
+#contenedor_cabecera {
+	color:#000;
+	height:140px;
+	background-color:#FAFAFA;
+}
+
+.logo {
+	float:left;
+	margin:10px 50px;
+}
+
+#cabecera_texto {
+	float:left;
+	margin:38px 8px 0;
+}
+
+/* Menu 1
+ * ******************************
+ * ******************************
+ * ******************************/
+#nav_menu {
+	font: 1em "Soberana Titular", Bold, sans-serif;
+	height:40px;
+	width:980px;
+	font-size:14px;
+	font-weight:bold;
+	position:relative;
+	background:url(../imagenes/barra.png) no-repeat center left;
+	/*background-color:#A5273F;*/
+}
+
+#nav_menu li {
+	float:left;
+	height:40px;
+}
+
+#nav_menu li+li {
+	background:url(../imagenes/separador.png) no-repeat center left;
+}
+
+#nav_menu li a {
+	color:#FFF;
+	float:left;
+	height:40px;
+	display:block;
+	line-height:40px;
+	padding:0 15px 0 15px;
+}
+
+#nav_menu li a.subnivel {
+	background:url(../imagenes/flecha3.gif) no-repeat 97% 50%;
+}
+
+#nav_menu :hover > a {
+	background:url(../imagenes/activo.png) no-repeat center bottom;
+}
+
+#nav_menu :hover > a.subnivel {
+	background:url(../imagenes/activo.png) no-repeat center bottom;
+}
+
+#nav_menu li ul {
+	top:40px;
+	z-index:1;
+	left:-9999px;
+	position:absolute;
+}
+
+#nav_menu :hover ul{
+	left:0;
+	background:url(../imagenes/barra.png) no-repeat center left;
+	/*background-color:#A5273F;*//* Color menu superior
+ * ******************************/
+}
+
+/* Contenedor contenido
+ * ******************************/
+#contenedor_contenido {
+	float:left;
+	width:664px;
+	overflow:hidden;
+	padding:40px 11px 30px 30px;
+}
+
+#contenido_imagen {
+	width:980px;
+	height:310px;
+	margin-bottom:15px;
+	background-color:#fff;
+}
+
+#contenido_imagen img {
+	margin:10px;
+}
+
+/* contenido Lateral
+ * ******************************/
+#contenido_lateral {
+	float:left;
+	width:145px;
+	margin-right:17px;
+}
+
+#contenido_lateral div+div {
+	margin-bottom:15px;
+}
+
+#lateral_visita a {
+	margin-left:70px;
+}
+
+.texto {
+	width:135px;
+	padding:5px;
+	color:#000;  //848484
+	font-size:12px;
+	margin-top:10px;
+	line-height:15px;
+	background-color:#fafafa;
+}
+
+.texto p {
+	margin-bottom:10px;
+}
+
+.texto a {
+	padding-left:10px;
+	background:url(../imagenes/flecha.gif) no-repeat left center;
+}
+
+.texto ul+ul {
+	margin-top:10px;
+}
+
+#mail .texto a {
+	background:url(../imagenes/mail.png) no-repeat left center;
+	padding-left:25px;
+}
+
+/* Menu 2
+ * ******************************
+ * ******************************
+ * ******************************/
+
+ #menu_2 {
+	width:145px;
+	position:relative;
+	font-size:12px;
+	margin-top:10px;
+ }
+
+
+ #menu_2 ul{
+	white-space:nowrap;
+	padding:1px 1px 0 1px;
+	background-color:#98979C; /*Color fondo del menu*/
+	text-align:left;
+ }
+
+ #menu_2 li{
+	display:inline;
+ }
+
+ #menu_2 ul ul{
+	position:absolute;
+	left:-9999px;
+ }
+
+ #menu_2 a{
+	display:block;
+	color:#fff;
+	line-height:22px;
+	padding:0 20px 0 5px;
+ }
+
+ #menu_2 li a.desplegar{
+	background:url(../imagenes/flecha2.gif) no-repeat right top;
+ }
+
+ #menu_2 :hover > a{
+	background-color:#fff;
+	color:#000;
+ }
+
+ #menu_2 :hover > a.desplegar{
+	background:url(../imagenes/flecha.gif) #fff no-repeat right top;
+ }
+
+ #menu_2 ul li:hover > ul{
+	left:100%;
+	margin-top:-23px;
+	margin-left:-1px;
+}
+
+/* contenido Noticias
+ * ******************************/
+#contenido_noticias {
+	float:left;
+	width:485px;
+	overflow:hidden;
+	margin-left:17px;
+}
+
+.noticias_entrada {
+	padding:20px;
+	margin-top:10px;
+	background-color:#fafafa;
+}
+
+.entrada_titulo {
+	overflow:hidden;
+}
+
+.titulo_imagen {
+	float:left;
+	padding:5px;
+	margin:0 20px 20px 0;
+	background-color:#A5273F;
+}
+
+.titulo_imagen + .titulo_imagen{
+	float:right;
+	margin:0;
+}
+
+.titulo_texto {
+	float:left;
+	width:285px;
+}
+
+.noticias_entrada h3 {
+	padding-bottom:5px;
+	margin-bottom:5px;
+	border-bottom:3px dotted #A5273F;
+}
+
+.titulo_texto h5 {
+	color:#848484;
+	line-height:13px;
+	text-align:justify;
+}
+
+.entrada_texto {
+	font-size:12px;
+	overflow:hidden;
+	line-height:20px;
+	text-align:justify;
+}
+
+.entrada_texto p {
+	color:#848484;
+	text-indent:20px;
+}
+
+.entrada_texto p+p {
+	margin-top:20px;
+}
+
+.entrada_texto ol {
+	color:#848484;
+	margin:10px 0 10px 23px;
+	list-style-type:decimal;
+}
+
+.entrada_texto ul {
+	color:#848484;
+	margin:10px 0;
+}
+
+.entrada_texto ul li {
+	padding-left:10px;
+	background:url(../imagenes/flecha.gif) no-repeat left center;
+}
+
+.entrada_texto p+h3,ol+h3,ul+h3,img+h3 {
+	margin-top:15px;
+}
+
+/* Contenedor Lateral
+ * ******************************/
+ #contenedor_lateral {
+	float:left;
+	width:254px;
+	padding:40px 30px 30px 11px;
+ }
+
+ .banner {
+	margin-top:10px;
+	text-align:center;
+ }
+
+ .banner+.encabezados {
+ 	margin-top:10px;
+ }
+
+/* Pie de Pagina
+ * ******************************/
+#pie {
+	width:100%;
+	height:100px;
+	overflow:hidden;
+	background-color:#FAFAFA;
+	text-align:center;
+}
+#pie_texto {
+	float:center;
+	color:#000;
+	margin:10px 6px;
+	text-align:center;
+}
+
+#pie_texto h5 {
+	margin-top:10px;
+	text-align:center;
+}
+
+
+/* Encabezados
+ * ******************************/
+.encabezados {
+	color:#A5273F;
+	padding-bottom:10px;
+	border-bottom:4px solid #A5273F;
+	background:url(../imagenes/puntos2.png) no-repeat 100% 20%;
+}
+
+/* Semestre
+ * ******************************/
+ .par {
+	overflow:hidden;
+ }
+
+ .par + .par {
+	margin-top:10px;
+ }
+
+.semestre {
+	float:left;
+	width:215px;
+}
+
+.semestre + .semestre {
+	margin-left:15px;
+}
+
+.semestre_num {
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	background:#98979C;
+}
+
+.semestre_materias {
+	height:200px;
+	text-align:left;
+	padding: 0px 10px 0;
+	border:1px solid #98979C;
+}
+
+.semestre_materias ul {
+
+}
+
+.reticulas {
+	margin: 7px 0px;
+	overflow:hidden;
+}
+
+.reticulas a {
+	float:left;
+	padding-left:30px;
+	background:url(../imagenes/pdf.png) no-repeat left center;
+	margin-top: 5px;
+	clear:both;
+}
+
+a.doc {
+	background:url(../imagenes/doc.png) no-repeat left center;
+}
+
+.info {
+	color:#848484;
+}
+
+.info ul {
+	margin:0;
+}
+
+.info ul li {
+	padding:0;
+	background:none;
+}
+
+.info span {
+	padding-left:10px;
+	background:url(../imagenes/flecha.gif) no-repeat left center;
+}
+
+ul.info_2 {
+	margin-left:90px;
+}
+
+/* Google Maps
+ * ****************************/
+#globo_mapa {
+	width:300px;
+	font-size:12px;
+}
+
+#globo_mapa h2 {
+	font-weight:bold;
+	font-size:16px;
+}
+
+#globo_mapa strong {
+	font-weight:bold;
+}
+
+/* Estilos Tablas
+ * ****************************/
+ 
+.tablas {
+	margin: 10px auto;
+}
+
+.tablas th {
+	font-weight:bold;
+}
+
+.tablas th, td {
+	width:auto;
+	color: #000;
+	text-align:center;
+	padding: 4px;
+	background-image:none;
+	vertical-align:middle;
+}
+
+.pintar {
+	background-color:#AEADB3;
+}

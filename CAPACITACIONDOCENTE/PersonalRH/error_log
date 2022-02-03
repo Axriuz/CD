@@ -1,0 +1,104 @@
+[17-Jul-2020 23:47:45 UTC] PHP Notice:  Undefined variable: pdf in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[17-Jul-2020 23:47:45 UTC] PHP Fatal error:  Call to a member function Output() on a non-object in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[17-Jul-2020 23:47:49 UTC] PHP Notice:  Undefined variable: pdf in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[17-Jul-2020 23:47:49 UTC] PHP Fatal error:  Call to a member function Output() on a non-object in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[17-Jul-2020 23:52:20 UTC] PHP Notice:  Undefined variable: pdf in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[17-Jul-2020 23:52:20 UTC] PHP Fatal error:  Call to a member function Output() on a non-object in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[26-Aug-2020 21:24:30 UTC] PHP Notice:  Undefined variable: pdf in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[26-Aug-2020 21:24:30 UTC] PHP Fatal error:  Call to a member function Output() on a non-object in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[30-Aug-2020 18:43:06 UTC] PHP Notice:  Undefined variable: pdf in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[30-Aug-2020 18:43:06 UTC] PHP Fatal error:  Call to a member function Output() on a non-object in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 114
+[10-Sep-2020 16:31:17 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[10-Sep-2020 16:31:21 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[10-Sep-2020 18:21:35 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[10-Sep-2020 18:22:10 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[10-Sep-2020 18:23:02 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[10-Sep-2020 18:23:50 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[10-Sep-2020 18:24:10 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[23-Sep-2020 19:09:16 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[24-Sep-2020 19:37:37 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/Menu.php on line 45
+[26-Sep-2020 15:12:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/constancia1.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/constancia1.php on line 31
+[06-Oct-2020 18:15:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/CambioNip.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/CambioNip.php on line 26
+[06-Oct-2020 18:19:22 UTC] PHP Notice:  Undefined variable: con in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:22 UTC] PHP Notice:  Undefined variable: conexion in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:22 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 31
+[06-Oct-2020 18:19:36 UTC] PHP Notice:  Undefined variable: con in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:36 UTC] PHP Notice:  Undefined variable: conexion in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:36 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 31
+[06-Oct-2020 18:19:51 UTC] PHP Notice:  Undefined variable: con in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:51 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:19:51 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 31
+[06-Oct-2020 18:20:08 UTC] PHP Notice:  Undefined variable: con in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:20:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:20:08 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 31
+[06-Oct-2020 18:21:19 UTC] PHP Notice:  Undefined variable: con in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:21:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 29
+[06-Oct-2020 18:21:19 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeCambioNip.php on line 31
+[06-Oct-2020 18:22:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ModificarDatos.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ModificarDatos.php on line 26
+[06-Oct-2020 18:23:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeModificacion.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeModificacion.php on line 32
+[06-Oct-2020 18:28:55 UTC] PHP Notice:  Undefined variable: conexion in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeModificacion.php on line 42
+[06-Oct-2020 18:30:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/constancia1.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/constancia1.php on line 31
+[07-Oct-2020 01:21:23 UTC] PHP Notice:  Undefined variable: conexion in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroDeModificacion.php on line 42
+[07-Oct-2020 01:28:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/encuesta1.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/encuesta1.php on line 31
+[08-Oct-2020 15:23:44 UTC] PHP Notice:  Undefined variable: conn in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[08-Oct-2020 15:23:44 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[08-Oct-2020 15:23:44 UTC] PHP Notice:  Undefined variable: query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[08-Oct-2020 15:23:44 UTC] PHP Warning:  mysqli_query(): Empty query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[08-Oct-2020 15:25:09 UTC] PHP Notice:  Undefined variable: conn in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[08-Oct-2020 15:25:09 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[08-Oct-2020 15:25:09 UTC] PHP Notice:  Undefined variable: query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[08-Oct-2020 15:25:09 UTC] PHP Warning:  mysqli_query(): Empty query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[08-Oct-2020 15:39:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ConsultarCursos.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ConsultarCursos.php on line 26
+[08-Oct-2020 16:11:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ConsultarCursos.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ConsultarCursos.php on line 26
+[08-Oct-2020 16:13:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/mostrarcursos.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/mostrarcursos.php on line 50
+[08-Oct-2020 16:23:13 UTC] PHP Warning:  require(cpn.php): failed to open stream: No such file or directory in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/matricularse.php on line 40
+[08-Oct-2020 16:23:13 UTC] PHP Fatal error:  require(): Failed opening required 'cpn.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/matricularse.php on line 40
+[12-Oct-2020 18:54:48 UTC] PHP Notice:  Undefined index: curso in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/mostrarcursos.php on line 40
+[12-Oct-2020 18:55:30 UTC] PHP Notice:  Undefined index: curso in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/mostrarcursos.php on line 40
+[21-Oct-2020 19:01:54 UTC] PHP Notice:  Undefined variable: material in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroCurso.php on line 80
+[21-Oct-2020 19:01:54 UTC] PHP Notice:  Undefined variable: infcomp in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroCurso.php on line 80
+[21-Oct-2020 19:01:54 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, bool given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroCurso.php on line 94
+[21-Oct-2020 19:01:54 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/RegistroCurso.php on line 238
+[24-Oct-2020 03:22:08 UTC] PHP Notice:  Undefined variable: conn in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[24-Oct-2020 03:22:08 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[24-Oct-2020 03:22:08 UTC] PHP Notice:  Undefined variable: query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[24-Oct-2020 03:22:08 UTC] PHP Warning:  mysqli_query(): Empty query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[24-Oct-2020 03:23:02 UTC] PHP Notice:  Undefined variable: conn in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[24-Oct-2020 03:23:02 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 66
+[24-Oct-2020 03:23:02 UTC] PHP Notice:  Undefined variable: query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[24-Oct-2020 03:23:02 UTC] PHP Warning:  mysqli_query(): Empty query in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/ENCUESTAFINAL.php on line 104
+[05-Nov-2020 01:46:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/pdfconstancia.php on line 23
+[06-Nov-2020 15:42:21 UTC] PHP Notice:  Undefined index: curso in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/mostrarcursos.php on line 40
+[18-Nov-2020 18:24:44 UTC] PHP Notice:  Undefined index: curso in /home/sigacitc/public_html/CAPACITACIONDOCENTE/Maestros/mostrarcursos.php on line 40
