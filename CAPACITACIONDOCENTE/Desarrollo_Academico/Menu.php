@@ -32,7 +32,7 @@ text-decoration:none;
 
 
 <?php
-
+/*
 session_start();
 
 if(!isset($_SESSION['usuario'])) 
@@ -42,7 +42,7 @@ if(!isset($_SESSION['usuario']))
     
 }
 $usuario =$_SESSION['usuario'];
-
+*/
 /*$host_db = "sigacitcg.com.mx"; 
 $user_db = "sigacitc";
 $pass_db = "Itcg11012016_2";

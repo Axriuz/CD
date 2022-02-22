@@ -58,6 +58,7 @@
 	font: 1em "Soberana Titular", Bold, sans-serif;
 }
 
+
 div#menu{
 	width:200px;
 	margin-top:50px;
@@ -70,7 +71,7 @@ div#menu ul{
 div#menu ul li{
 	margin-top:15px;
 	font-size:18px;
-	background-color:#a5273f;
+	background-color:#1b396a;
 	width:200px;
 	padding-top:10px;
 	padding-bottom:10px;
