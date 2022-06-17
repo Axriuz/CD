@@ -6,10 +6,11 @@ $a =$_POST["a"];
 
 $usuario =$_SESSION['usuario'];
 
-require('con.php');
+require('_con.php');
 
 //Configuración PDF
-require_once '../pdf/dompdf_config.inc.php';
+require_once 'dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
 header("Content-Type: text/html; charset=UTF-8");
 
         $html.= '';

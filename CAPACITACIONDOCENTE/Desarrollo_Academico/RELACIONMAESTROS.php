@@ -34,11 +34,12 @@ $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 mysqli_query("SET NAMES UTF8");
 */
 
-require('con.php');
+require('_con.php');
 
 $year = date("Y");    
 
-require_once '../pdf/dompdf_config.inc.php';
+require_once 'dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
 //header("Content-Type: text/html; charset=UTF-8");
 
 	//$html.= '';
@@ -249,7 +250,7 @@ $html.= "<br>";
 $resultado = mysqli_query($con,"SELECT maestro.nombre FROM maestro INNER JOIN curso ON maestro.Emp = curso.instructor WHERE ( curso.instructor=maestro.Emp and curso.nombre='$curso' )
 ");
 if (!$resultado) {
-    echo 'No se pudo ejecutar la consulta: ' . mysqli_error();
+    echo 'No se pudo ejecutar la consulta: ';
     exit;
 }
 $html.= '<br>';

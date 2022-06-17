@@ -16,15 +16,10 @@ function fechaesp($date) {
 
 
 // $usuario =$_SESSION['usuario'];
- $usuari = $_POST["usuari"]; 
-$host= "sigacitcg.com.mx"; 
- $user = "sigacitc"; 
- $pass= "Itcg11012016_2"; 
- $conexion=mysql_connect($host,$user,$pass);
-$bd_seleccionada = mysql_select_db('sigacitc_cursosdesacadCP', $conexion);
-mysql_query("SET NAMES UTF8");
+require('_con.php');
 
-require_once '../pdf/dompdf_config.inc.php';
+require_once 'dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
 //header("Content-Type: text/html; charset=UTF-8");
 
 	//$html.= '';
@@ -63,10 +58,10 @@ $html.= '<center>';
 $html.= "<h2>";
 $html.= 'HISTORIAL DE CONSTANCIAS ';
 $html.= "</h2>";
-$html.= "<P align='right'>Fecha de impresión: ".fechaesp(date("Y- n- j"))."</p>";
+$html.= "<P align='right'>Fecha de impresi锟斤拷n: ".fechaesp(date("Y- n- j"))."</p>";
 $consulta_mysql1="SELECT Nombre from maestro where Emp = '".$usuari."'";
-$resultado_consulta_mysql1=mysql_query($consulta_mysql1);
-while($fila1=mysql_fetch_array($resultado_consulta_mysql1)){
+$resultado_consulta_mysql1=mysqli_query($con,$consulta_mysql1);
+while($fila1=mysqli_fetch_array($resultado_consulta_mysql1)){
 $html.= mb_strtoupper("DOCENTE: ". $fila1[0], "UTF-8");
 }
 $html.= '</center>';	
@@ -76,16 +71,16 @@ maestro on matriculas.Emp=maestro.Emp inner join curso on curso.Nombre=matricula
 matriculas.Emp = '".$usuari."' order by Year(curso.CursoInicio),matriculas.curso";
 
 //$html.="".$consulta_mysql;
-$resultado_consulta_mysql=mysql_query($consulta_mysql);
+$resultado_consulta_mysql=mysqli_query($con, $consulta_mysql);
   
 $html.= "<table border='1' bordercolor='#0037FF'>   <tr>
     		<th>Curso</th>
-				<th>Año</th> 
+				<th>A锟�0锟�9o</th> 
 					<th>Periodo</th> 
     		<th>Estado constancia</th> 
       </tr>
 	  ";
-while($fila=mysql_fetch_array($resultado_consulta_mysql)){
+while($fila=mysqli_fetch_array($resultado_consulta_mysql)){
 $html.= "
 	 <tr>
     <td>".mb_strtoupper($fila[0], 'UTF-8')."</td>

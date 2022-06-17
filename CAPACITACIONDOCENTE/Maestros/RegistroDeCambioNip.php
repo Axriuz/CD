@@ -25,13 +25,13 @@ $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 mysqli_query($con,"SET NAMES UTF8");
 */
 
-require('con.php');
+require('_con.php');
 
 $sql = "UPDATE `maestro` SET Contrasena='$Contrasena' WHERE Emp = '$usuario' ";
   
    $result = mysqli_query($con,$sql);
 if(!$result) {  
- echo 'ERROR: ' . mysqli_error() . "\n";
+ echo 'ERROR: ' . "\n";
 
    }else {
    header('Location: Menu.php'). $_SESSION['usuario'];} 

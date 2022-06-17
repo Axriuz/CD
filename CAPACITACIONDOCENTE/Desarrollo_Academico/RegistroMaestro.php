@@ -18,7 +18,7 @@ $Nombre = $_POST["Nombre2"];
 $Nombre1 = $_POST["Nombre3"]; 
 $Nombre2 = $_POST["Nombre4"]; 
 
-require('con.php');
+require('_con.php');
 
 /*
 $host= "sigacitcg.com.mx"; 

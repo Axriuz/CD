@@ -1,10 +1,5 @@
 <html>
 <body> 
- 
-
-   
-  <br>
-
 <?php 
 error_reporting(E_ALL ^ E_DEPRECATED);
 header("Content-Type: text/html;charset=utf-8");
@@ -22,7 +17,7 @@ $host= "sigacitcg.com.mx";
 $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 mysqli_query($con,("SET NAMES UTF8");
 */
-require('con.php');
+require('_con.php');
 
 
 $AntD = $_POST["anteriorD"]; 

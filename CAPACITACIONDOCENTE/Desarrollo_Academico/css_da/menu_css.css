@@ -47,7 +47,7 @@
 
 .bandera1 li:hover ul{
 	display: block;
-	background: #aeadb3;
+	background: #fff,0.5;
 }
 
 .bandera1 li{
@@ -70,7 +70,7 @@ div#menu ul{
 
 div#menu ul li{
 	margin-top:15px;
-	font-size:18px;
+	font-size:16px;
 	background-color:#1b396a;
 	width:200px;
 	padding-top:10px;
@@ -87,3 +87,6 @@ div#menu ul li:hover{
 	padding-left:30px;
 }
 
+input[type=submit],input[type=button]{
+	BORDER:#0b231e 4px solid; BACKGROUND-COLOR: #a5273f; COLOR: #FCFCFD;
+}

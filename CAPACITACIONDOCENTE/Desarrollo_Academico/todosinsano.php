@@ -5,12 +5,13 @@ $periodo=$_POST['periodo'];
  $usuario =$_SESSION['usuario'];
 
 
-require('con.php');
+require('_con.php');
 
 $username = $_POST['usuario']; 
 $password = $_POST['password']; 
 
-require_once '../pdf/dompdf_config.inc.php';
+require_once 'dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
 
 
  $html.= '';
@@ -163,7 +164,7 @@ FROM maestro INNER JOIN curso ON maestro.Emp = curso.instructor
  WHERE ( curso.instructor=maestro.Emp and curso.nombre='$curso' )
 ");
 if (!$resultado) {
-    echo 'No se pudo ejecutar la consulta: ' . mysqli_error();
+    echo 'No se pudo ejecutar la consulta: ' ;
     exit;
 }
 $html.= '<br>';

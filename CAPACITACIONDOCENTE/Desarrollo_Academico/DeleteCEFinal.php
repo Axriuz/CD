@@ -252,14 +252,14 @@ color: #003399;/*Added*/
 
 /*Encabezado*/
 .titulo {
-//  height: 70px;
-  width: 100%;
-  font-size: 30px;
-  //background: #336633;
-  color: gray;
-  line-height: 100%;
-  border-radius: 3px 3px 0 0;
-  //box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 100%;
+    font-size: 30px;
+    background: #336633;
+    color: gray;
+    line-height: 100%;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
 
 
 }
@@ -474,7 +474,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);//para trabajar con la version actual de m
 
 
 
-require('con.php');
+require('_con.php');
 //$con=Conectar();//variable que almacena la conexión ala base de datos
 
 if(isset($_REQUEST['DESACTIVAR'])){

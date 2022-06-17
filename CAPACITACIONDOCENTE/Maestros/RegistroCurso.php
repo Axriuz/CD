@@ -28,7 +28,7 @@ $bd_seleccionada = mysqli_select_db($con,'sigacitc_cursosdesacadCP');
 mysqli_query($con,"SET NAMES UTF8");
 */
 
-require('con.php');
+require('_con.php');
 //Variables donde se guardo la información del formulario.
 $tec = $_POST["tec"];  
 $curso = $_POST["curso"]; 
@@ -82,7 +82,7 @@ $sql = "INSERT INTO `curso`(`Nombre`, `Periodo`, `Duracion`, `CursoInicio`,`Curs
    $result = mysqli_query($con,$sql);
 if(!$result) 
 {  
- echo 'ERROR: ' . mysql_error() . "\n";
+ echo 'ERROR: ' . "\n";
  }
  
  else {	   
@@ -159,7 +159,7 @@ if ( $archivo != "none" ){
 	mysqli_select_db($con,'sigacitc_cursosdesacadCP');
 	
 	//EJECUTAMOS LA CONSULTA
-	mysqli_query($con,$qry) or die("Query: $qry <br />Error: ".mysql_error());
+	mysqli_query($con,$qry) or die("Query: $qry <br />Error: ");
 	
 	//CERRAMOS LA CONEXION
 	mysqli_close($con);
@@ -240,7 +240,7 @@ if ( $archivo != "none" ){
 	//SELECCIONAMOS LA BASE DE DATOS CON LA CUAL VAMOS
 	
 	//EJECUTAMOS LA CONSULTA
-	mysqli_query($con,$qry) or die("Query: $qry <br />Error: ".mysql_error());
+	mysqli_query($con,$qry) or die("Query: $qry <br />Error: ");
 	
 	//CERRAMOS LA CONEXION
 	mysqli_close($con);
@@ -320,7 +320,7 @@ if ( $archivo != "none" ){
 
 	//SELECCIONAMOS LA BASE DE DATOS CON LA CUAL VAMOS
 	//EJECUTAMOS LA CONSULTA
-	mysqli_query($con,$qry) or die("Query: $qry <br />Error: ".mysql_error());
+	mysqli_query($con,$qry) or die("Query: $qry <br />Error: ");
 	
 	//CERRAMOS LA CONEXION
 	mysqli_close($con);

@@ -86,3 +86,36 @@ div#menu ul li:hover{
 	padding-left:30px;
 }
 
+table{
+	text-align: center;
+}
+.table1 {
+border: #497f43 4px solid;
+text-align: center;
+}
+.table2 {
+border: #497f43 2px solid;
+text-align: center;
+}
+ul, li {
+	list-style: none;
+}
+
+a:link
+{
+text-decoration:none;
+}
+body{
+	font: 1em "Cambria", Georgia, bold, serif;	
+	align-items: center;
+	text-align: center;
+	}	
+div{
+	border-left: #1b396a;
+}
+h4{
+	font-family: "Cambria", Georgia, serif;
+}
+input[type=submit],input[type=button]{
+	BORDER:#0b231e 4px solid; BACKGROUND-COLOR: #a5273f; COLOR: #FCFCFD;
+}

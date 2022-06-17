@@ -3,17 +3,10 @@ error_reporting(0);
 $curso = $_REQUEST['cursos']; 
 
  $usuario =$_SESSION['usuario'];
+ require('_con.php');
 
-$host= "sigacitcg.com.mx"; 
- $user = "sigacitc"; 
- $pass= "Itcg11012016_2"; 
- $con=mysqli_connect("$host","$user","$pass",'sigacitc_cursosdesacadCP');
-$bd_seleccionada = mysqli_select_db($con,'sigacitc_cursosdesacadCP');
-mysqli_query($con,"SET NAMES UTF8");
-
-
-require_once '../pdf/dompdf_config.inc.php';
-
+ require_once 'dompdf/autoload.inc.php';
+ use Dompdf\Dompdf;
 $html.= '';
 
 
@@ -159,7 +152,7 @@ $html.= "<br>";	//$resSql1=mysql_query($sql1);
 $resultado = mysqli_query($con,"SELECT maestro.nombre FROM maestro INNER JOIN curso ON maestro.Emp = curso.instructor WHERE ( curso.instructor=maestro.Emp and curso.nombre='$curso' )
 ");
 if (!$resultado) {
-    echo 'No se pudo ejecutar la consulta: ' . mysql_error();
+    echo 'No se pudo ejecutar la consulta: ' ;
     exit;
 }
 $html.= '<br>';

@@ -7,10 +7,9 @@ $anio=$_REQUEST['anio'];
 $periodo=$_REQUEST['periodo'];
  $usuario =$_SESSION['usuario'];
 
-require('con.php');
-
-require_once '../pdf/dompdf_config.inc.php';
-
+require('_con.php');
+require_once 'dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
  
 
 $html.= '';
@@ -197,7 +196,7 @@ $html.= "<br>";
 $resultado = mysqli_query($con,"SELECT maestro.ApellidoP,maestro.ApellidoM,maestro.nombre FROM maestro INNER JOIN curso ON maestro.Emp = curso.instructor WHERE ( curso.instructor=maestro.Emp and curso.nombre='$curs' )
 ");
 if (!$resultado) {
-    echo 'No se pudo ejecutar la consulta: ' . mysqli_error();
+    echo 'No se pudo ejecutar la consulta: ' ;
     exit;
 }
 $html.= '<br>';

@@ -24,9 +24,10 @@ $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 mysqli_query("SET NAMES UTF8");
 */
 
-require('con.php');
+require('_con.php');
 
-require_once '../pdf/dompdf_config.inc.php';
+require_once 'dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
 	 $html.= '';
 $html.= '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
 $html.= '<link type="text/css" rel="stylesheet" href="CSSAREA.css" />';

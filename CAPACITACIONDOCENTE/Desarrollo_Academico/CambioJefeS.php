@@ -22,7 +22,7 @@ $host= "sigacitcg.com.mx";
 $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 mysqli_query($con,("SET NAMES UTF8");
 */
-require('con.php');
+require('_con.php');
 
 
 $AntD = $_POST["anteriorD"]; 

@@ -10,15 +10,14 @@ $host= "sigacitcg.com.mx";
 $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
  */
  
- require('con.php');
+ require('_con.php');
  
 //$sql="select Nombre,ApellidoP,ApellidoM from maestro";
 $sql="select DISTINCT maestro.Nombre, maestro.ApellidoP,maestro.ApellidoM from maestro 
 INNER JOIN CedulaIns on maestro.Emp = CedulaIns.Emp INNER JOIN curso on CedulaIns.Curso = curso.Nombre
 WHERE CedulaIns.PlazaActual like '%E3817%' and curso.TipoCurso = 'Actualizacion Profesional'
  and curso.CursoInicio like '%$anio%' ORDER BY maestro.ApellidoP ASC";
-$resSql=mysqli_query($con,$sql); 
-mysqli_query($con,"SET NAMES 'utf-8'");  
+$resSql=mysqli_query($con,$sql);   
   
 require('FPDF/fpdf.php');
 

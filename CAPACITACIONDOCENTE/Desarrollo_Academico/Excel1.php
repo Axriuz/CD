@@ -2,7 +2,7 @@
 require_once 'Classes/PHPExcel.php';
 $curso =$_POST["cursos"]; 
 
-require('con.php');
+require('_con.php');
 
 
 //Consultas SQL
@@ -10,7 +10,7 @@ require('con.php');
 $sql="select distinct maestro.ApellidoP,maestro.ApellidoM,maestro.nombre from maestro, matriculas
 where matriculas.Curso = '$curso'  and matriculas.Emp = maestro.emp   and matriculas.Asistencia >= '4'
 order by maestro.ApellidoP,maestro.ApellidoM,maestro.Nombre ";
-$result = mysqli_query ($con, $sql) or die (mysqli_error ());
+$result = mysqli_query ($con, $sql);
 //Obtiene las fechas de incio y fin del curso y el horarios en el que se va a impartir
 mysqli_query($con, "SET lc_time_names = 'es_ES'" ); 
 $fechaInicio = "SELECT DATE_FORMAT(  `CursoInicio` ,  '%d de %M ' ) AS modified_date

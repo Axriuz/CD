@@ -13,7 +13,7 @@ $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 mysqli_query($con,"SET NAMES 'utf-8'"); 
 */
 
-require('con.php');
+require('_con.php');
 
 require('FPDF/fpdf.php');
 

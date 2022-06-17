@@ -29,7 +29,7 @@ mysqli_query($con,"SET NAMES UTF8");
 */
 
 
-require('con.php');
+require('_con.php');
 
 echo "<div style=text-align:center;>";
 echo "<table width='100%' border='5' cellpadding=30 CELLSPACING=30  bordercolor='#D149F6' ;>";

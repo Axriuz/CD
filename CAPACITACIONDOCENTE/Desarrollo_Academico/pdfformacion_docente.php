@@ -12,7 +12,7 @@ $host= "sigacitcg.com.mx";
 $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 */
 
-require('con.php');
+require('_con.php');
  
 //$sql="select Nombre,ApellidoP,ApellidoM from maestro";
 $sql="select DISTINCT maestro.Nombre, maestro.ApellidoP,maestro.ApellidoM from maestro INNER JOIN CedulaIns on maestro.Emp = CedulaIns.Emp INNER JOIN curso on CedulaIns.Curso = curso.Nombre WHERE CedulaIns.PlazaActual like '%E3817%' and curso.TipoCurso = 'Formacion Docente' and curso.Periodo = '$p' and curso.CursoInicio like '%$anio%' and (maestro.Estudios like '%maestr%' or maestro.Estudios like '%doctora%') ORDER BY maestro.ApellidoP ASC";

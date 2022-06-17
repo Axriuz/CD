@@ -7,10 +7,11 @@ $p= $_POST["periodo"];
 
 $usuario =$_SESSION['usuario'];
 
-require('con.php');
+require('_con.php');
 
 //Configuración PDF
-require_once '../pdf/dompdf_config.inc.php';
+require_once 'dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
 header("Content-Type: text/html; charset=UTF-8");
 
         $html.= '';
@@ -155,7 +156,7 @@ mysqli_query($con,"SET lc_time_names = 'es_ES'" );
 $fechaInicio = "SELECT DATE_FORMAT(  `CursoInicio` ,  '%d de %M ' ) AS modified_date
 FROM curso where (Nombre='$dato11[0]')";
 $RFI = mysqli_query($con,$fechaInicio);  
-mysqli_query("SET lc_time_names = 'es_ES'" ); 
+
 $fechaFin = "SELECT DATE_FORMAT(  `CursoFin` ,  '%d de %M de %Y' ) AS modified_date
 FROM curso where (Nombre='$dato11[0]')";
 $RFF = mysqli_query($con,$fechaFin);

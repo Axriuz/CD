@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 $usuario =$_SESSION['usuario'];
-
+/*
 $host= "sigacitcg.com.mx"; 
  $user = "sigacitc"; 
  $pass= "Itcg11012016_2"; 
@@ -15,12 +15,15 @@ if (mysqli_connect_errno()) {
 
 $bd_seleccionada = mysqli_select_db($con,'sigacitc_cursosdesacadCP');
 mysqli_query($con,"SET NAMES UTF8");
+*/
+require('_con.php');
 
 $res=mysqli_query($con,"SELECT emp,nombre,apellidoP,apellidoM from maestro where Tipo_Usuario=2"); 
 if(!$res) { 
     echo '<script language="javascript">alert("Error");</script>';
     }
-    require_once '../pdf/dompdf_config.inc.php';
+    require_once 'dompdf/autoload.inc.php';
+	use Dompdf\Dompdf;
     $html.= '';
     
     header("Content-Type: text/html;charset=utf-8");

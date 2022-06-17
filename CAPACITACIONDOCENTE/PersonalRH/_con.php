@@ -1,13 +1,13 @@
 <?php
-$host= "sigacitcg.com.mx"; 
-$user = "sigacitc"; 
-$pass= "Itcg11012016_2"; 
+$host= "localhost"; 
+$user = "root"; 
+$pass= "";   
 
-$con=mysqli_connect("$host","$user","$pass","sigacitc_cursosdesacadCP");
+$con=mysqli_connect("$host","$user","$pass","sigacitc_cursosdesacadcp");
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   exit;
 }
-$bd_seleccionada = mysqli_select_db($con,'sigacitc_cursosdesacadCP');
+$bd_seleccionada = mysqli_select_db($con,'sigacitc_cursosdesacadcp');
 mysqli_query($con,"SET NAMES UTF8");
 ?>

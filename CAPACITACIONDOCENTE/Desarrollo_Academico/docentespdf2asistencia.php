@@ -3,8 +3,8 @@
 
 
  error_reporting(0);
-
-require_once '../pdf/dompdf_config.inc.php';
+ require_once 'dompdf/autoload.inc.php';
+ use Dompdf\Dompdf;
 
 $curso = $_REQUEST["cursos"]; 
 //$curso ="TALLER MARCO DE REFERENCIA 2018 DEL CACEI. REACREDITACION";

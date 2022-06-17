@@ -18,10 +18,10 @@ $Nombre1 = $_POST["APExt"];
 $Nombre2 = $_POST["AMExt"]; 
 $total = $_POST["id"];
 $sexo= $_POST["sexo"];
-
-$host= "sigacitcg.com.mx"; 
-$user = "sigacitc"; 
-$pass= "Itcg11012016_2"; 
+/*
+$host= "localhost"; 
+$user = "root"; 
+$pass= ""; 
 
 $con=mysqli_connect("$host","$user","$pass","sigacitc_cursosdesacadCP");
 if (mysqli_connect_errno()) {
@@ -30,8 +30,8 @@ if (mysqli_connect_errno()) {
 }
 $bd_seleccionada = mysqli_select_db($con,'sigacitc_cursosdesacadCP');
 mysqli_query($con,"SET NAMES UTF8");
-
- 
+*/
+require('_con.php');
 //Insertamos al usuario externo
 $sql = "INSERT INTO  maestro (Emp,Nombre,sexo,Tipo_Usuario,ApellidoP,ApellidoM) VALUES ('E$total','$Nombre','$sexo','2','$Nombre1','$Nombre2')";  
 $result = mysqli_query( $con,$sql);

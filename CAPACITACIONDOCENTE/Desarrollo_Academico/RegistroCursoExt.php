@@ -1,9 +1,6 @@
 <html>
 <body> 
- 
- 
-  <br>
-
+<br>
 <?php 
 error_reporting(E_ALL ^ E_DEPRECATED);//para trabajar con la version actual de mysql
 header('Content-Type: text/html; charset=UTF-8');  
@@ -17,6 +14,7 @@ if(!isset($_SESSION['usuario']))
 $usuario =$_SESSION['usuario'];
 //Esta bandera sirve al momento de verificar si el curso ya existe, si ya esxiste se cambia a 1
 $BAN=0;
+/*
 $host= "sigacitcg.com.mx"; 
  $user = "sigacitc"; 
  $pass= "Itcg11012016_2"; 
@@ -25,7 +23,8 @@ $host= "sigacitcg.com.mx";
 
 $bd_seleccionada = mysqli_select_db($con,'sigacitc_cursosdesacadCP');
 mysqli_query($con,"SET NAMES UTF8");
-
+*/
+require('_con.php');
 //Variables donde se guardo la información del formulario.
 $instructor= $_POST['instructor'];
 $tec = $_POST["tec"];  
@@ -77,7 +76,7 @@ $sql = "INSERT INTO `curso`(`Nombre`, `Periodo`, `Duracion`, `CursoInicio`,`Curs
    $result = mysqli_query($con,$sql);
 if(!$result) 
 {  
- echo 'ERROR: ' . mysql_error() . "\n";
+ echo 'ERROR: \n';
  }
  
  else {	   

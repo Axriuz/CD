@@ -24,13 +24,13 @@ $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
 mysqli_query($con,"SET NAMES UTF8");
 */
 
-require('con.php');
+require('_con.php');
 
 $sql = "UPDATE `NoMaestros` SET NO_MAESTROS='$num' WHERE Id = '1' ";
   
-   $result = mysqli_query($con,$sql, $conexion);
+$result = mysqli_query($con,$sql, $conexion);
 if(!$result) {  
- echo 'ERROR: ' . mysqli_error() . "\n";
+ echo 'ERROR: '. "\n";
    }else 
    {
 	   

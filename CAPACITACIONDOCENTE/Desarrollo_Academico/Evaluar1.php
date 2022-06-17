@@ -27,7 +27,7 @@ $a1 = $_POST['ins'];
 $bd_seleccionada = mysqli_select_db('sigacitc_cursosdesacadCP', $conexion);
   mysqli_query($con,("SET NAMES 'utf8'");
 */
-require('con.php');
+require('_con.php');
 
 
 
